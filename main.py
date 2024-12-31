@@ -18,9 +18,6 @@ def handle_request():
 
 
 if __name__ == "__main__":
-
-    data_file = open("data.txt", "a+")
-    data_file.write("123")
     f = open('secretkey.txt')
     key = f.read()
     app.run(host="0.0.0.0", port=5000)
