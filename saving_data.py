@@ -5,7 +5,7 @@ def save_data(temperature: float, humidity: float) -> None:
     timestamp = int(round(ct.timestamp()))
 
     file = open(f"{config.DATA_PATH}last_updated.txt", "w")
-    file.write(timestamp)
+    file.write(str(timestamp))
 
     ct = datetime.now()
     timestamp = int(round(ct.timestamp()))
